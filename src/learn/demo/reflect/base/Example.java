@@ -1,7 +1,5 @@
 package learn.demo.reflect.base;
 
-import sun.management.resources.agent;
-
 public class Example {
 	String s;
 	int i, i2, i3;
@@ -30,10 +28,10 @@ public class Example {
 	}
 	
 	public void print() {
-		System.out.print("s=" + s);
-		System.out.print("i=" + i);
-		System.out.print("i2=" + i2);
-		System.out.print("i3=" + i3);
+		System.out.println("s=" + s);
+		System.out.println("i=" + i);
+		System.out.println("i2=" + i2);
+		System.out.println("i3=" + i3);
 	}
 	
 }
