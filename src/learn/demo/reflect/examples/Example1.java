@@ -1,19 +1,19 @@
-package learn.demo.reflect.base;
+package learn.demo.reflect.examples;
 
-public class Example {
+public class Example1 {
 	String s;
 	int i, i2, i3;
 	
-	private Example() {
+	private Example1() {
 		
 	}
 	
-	protected Example(String s, int i) {
+	protected Example1(String s, int i) {
 		this.s = s;
 		this.i = i;
 	}
 	
-	public Example(String ...args) throws NumberFormatException {
+	public Example1(String ...args) throws NumberFormatException {
 		if (0 < args.length) {
 			i = Integer.valueOf(args[0]);
 		}

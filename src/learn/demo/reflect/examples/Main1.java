@@ -1,18 +1,18 @@
-package learn.demo.reflect.base;
+package learn.demo.reflect.examples;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
 
-public class Main {
+public class Main1 {
 
 	public static void main(String[] args) {
 		exampleOfConstructor();
 	}
 	
 	private static void exampleOfConstructor() {
-		Example example = new Example("10", "20", "30");
+		Example1 example = new Example1("10", "20", "30");
 		
-		Class<? extends Example> exampleClass = example.getClass();
+		Class<? extends Example1> exampleClass = example.getClass();
 		
 		Constructor<?>[] declaredConstructors = exampleClass.getDeclaredConstructors();
 		for (Constructor<?> constructor : declaredConstructors) {
@@ -28,22 +28,20 @@ public class Main {
 			for (Class<?> exceptionType : exceptionTypes) {
 				System.out.println(" " + exceptionType);
 			}
-
 			
-			
-			Example newInstance = null;
+			Example1 newInstance = null;
 			
 			for (int i=0; i<3 && null == newInstance; ++i) {
 				try {
 					if (constructor.isVarArgs()) {
 						// 可变参数[!!!使用二维数组]
 						Object[] parameters = new Object[] {new String[] {"100", "200", "300", "400"}};
-						newInstance = (Example)constructor.newInstance(parameters);
+						newInstance = (Example1)constructor.newInstance(parameters);
 					} else {
 						if (parameterTypes.length == 0) {
-							newInstance = (Example)constructor.newInstance();
+							newInstance = (Example1)constructor.newInstance();
 						} else if (parameterTypes.length == 2) {
-							newInstance = (Example)constructor.newInstance("7", 5);
+							newInstance = (Example1)constructor.newInstance("7", 5);
 						}
 					}
 				} catch (InstantiationException | IllegalAccessException | IllegalArgumentException
