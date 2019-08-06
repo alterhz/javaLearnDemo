@@ -2,6 +2,7 @@ package learn.demo.collections;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Vector;
 
 public class ListRetainTest {
 	public static void main(String[] args) {
@@ -39,6 +40,11 @@ public class ListRetainTest {
 		for (int n : copyOfList1) {
 			System.out.println(n);
 		}
+		
+		Vector<Integer> vector = new Vector<>();
+		
+		
+		
 		
 	}
 }
