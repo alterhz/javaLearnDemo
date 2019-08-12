@@ -14,7 +14,9 @@ import learn.demo.event.info.EventGameEnd;
 
 
 public class Event {
-	
+
+	//private static Map<Class<?>, >
+
 	private static Map<String, List<Method>> listenMethods = new HashMap<>();
 	
 	static {

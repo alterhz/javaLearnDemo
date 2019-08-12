@@ -33,14 +33,29 @@ public class GenericsTest {
 		
 		List<?> l2 = l1;
 		
+		System.out.println("l2:index:0=" + l2.get(0));
+
+		// [!!!]通配符类型不能进行添加操作
+//		l2.add("ttt");
+		
+		@SuppressWarnings("unchecked")
+		List<String> l4 = (List<String>)l2;
+		l4.add("mmm");
+		
+		System.out.println("l2:");
+		for (int i=0; i<l2.size(); ++i) {
+			System.out.println(l2.get(i));
+		}
+		
 		List<?> l3 = new LinkedList<Integer>();
 		
-//		l2.add("ttt");
-//		
-//		l3.add(1);
+		// [!!!]通配符类型不能进行添加操作
+//		l3.add(8);
 		
-		l3.get(0);
-		l3.remove(0);
+//		l3.get(0);
+//		l3.remove(0);
+		
+		
 		
 	}
 	
