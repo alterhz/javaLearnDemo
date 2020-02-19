@@ -5,7 +5,6 @@ import java.lang.reflect.Method;
 public class Main3 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		Example3 example3 = new Example3();
 		Class<?> exampleClass = example3.getClass();
 		

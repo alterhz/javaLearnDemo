@@ -2,6 +2,7 @@ package learn.demo.generics;
 
 public class InnerClassDemo {
 
+	@SuppressWarnings("unused")
 	public static void main(String[] args) {
 		ClassA classA = new ClassA();
 		

@@ -9,6 +9,7 @@ import java.util.Map;
 
 public class GenericsTest {
 	
+	@SuppressWarnings("unused")
 	public static void main(String[] args) {
 		MyT<? extends A> myT = null;
 		

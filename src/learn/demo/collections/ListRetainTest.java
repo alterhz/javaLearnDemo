@@ -1,8 +1,8 @@
 package learn.demo.collections;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
-import java.util.Vector;
 
 public class ListRetainTest {
 	public static void main(String[] args) {
@@ -41,10 +41,24 @@ public class ListRetainTest {
 			System.out.println(n);
 		}
 		
-		Vector<Integer> vector = new Vector<>();
+		List<Integer> list = new ArrayList<>();
 		
+		list.add(5);
+		list.add(3);
+		list.add(8);
+		list.add(7);
 		
+		list.sort(new Comparator<Integer>() {
+
+			@Override
+			public int compare(Integer o1, Integer o2) {
+				return Integer.compare(o2, o1);
+			}
+		});
 		
-		
+		System.out.println("_______________");
+		for (int n : list) {
+			System.out.println(n);
+		}
 	}
 }

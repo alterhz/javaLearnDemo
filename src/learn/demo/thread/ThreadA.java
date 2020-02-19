@@ -23,7 +23,6 @@ public class ThreadA extends Thread {
 				threadB.wait();
 				System.out.println("ThreadA wait after.");
 			} catch (InterruptedException e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 		}
@@ -63,7 +62,6 @@ public class ThreadA extends Thread {
 		try {
 			Thread.sleep(2000);
 		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		

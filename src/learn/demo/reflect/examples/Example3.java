@@ -15,6 +15,7 @@ public class Example3 {
 		return Integer.valueOf(s) + i;
 	}
 	
+	@SuppressWarnings("unused")
 	private String privateMethod(String ...args) {
 		System.out.println("执行privateMethod方法");
 		StringBuffer stringBuffer = new StringBuffer();

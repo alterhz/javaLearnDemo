@@ -14,13 +14,11 @@ public class A1 extends A {
 
 	@Override
 	public void test() {
-		// TODO Auto-generated method stub
 		super.test();
 	}
 
 	@Override
 	public void print() {
-		// TODO Auto-generated method stub
 		super.print();
 	}
 

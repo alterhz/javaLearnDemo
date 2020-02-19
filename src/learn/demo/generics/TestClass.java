@@ -33,6 +33,7 @@ public class TestClass {
 		return s;
 	}
 	
+	@SuppressWarnings("unused")
 	public static void main(String[] args) {
 		
 		testStatic();

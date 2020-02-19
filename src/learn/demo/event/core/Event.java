@@ -6,7 +6,6 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.function.BiFunction;
 import java.util.function.Consumer;
 
 import learn.demo.event.EventManager;
@@ -58,7 +57,6 @@ public class Event {
 					try {
 						method.invoke(null, eventInfo);
 					} catch (IllegalAccessException | IllegalArgumentException | InvocationTargetException e) {
-						// TODO Auto-generated catch block
 						e.printStackTrace();
 					}
 				}
@@ -97,7 +95,6 @@ public class Event {
 			System.out.println("call function interface:" + (t4-t3));
 			
 		} catch (NoSuchMethodException | SecurityException | IllegalAccessException | IllegalArgumentException | InvocationTargetException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		

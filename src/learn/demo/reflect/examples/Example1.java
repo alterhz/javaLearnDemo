@@ -4,6 +4,7 @@ public class Example1 {
 	String s;
 	int i, i2, i3;
 	
+	@SuppressWarnings("unused")
 	private Example1() {
 		
 	}

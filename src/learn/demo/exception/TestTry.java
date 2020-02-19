@@ -8,7 +8,6 @@ public class TestTry {
 //		try {
 //			int n = 8/0;
 //		} catch (Exception e) {
-//			// TODO: handle exception
 //			e.printStackTrace();
 //		} finally {
 //			System.out.println("finish1");
@@ -17,7 +16,6 @@ public class TestTry {
 //		try {
 //			throw new MyException("myException");
 //		} catch (Exception e) {
-//			// TODO: handle exception
 //			e.printStackTrace();
 //		} finally {
 //			System.out.println("finish2");
@@ -28,7 +26,6 @@ public class TestTry {
 //		try {
 //			testTry.testException();
 //		} catch (MyException e) {
-//			// TODO Auto-generated catch block
 //			e.printStackTrace();
 //		}
 		
@@ -36,7 +33,6 @@ public class TestTry {
 		try {
 			testTry.test();
 		} catch (Exception e) {
-			// TODO: handle exception
 			e.printStackTrace();
 		}
 		
@@ -44,7 +40,6 @@ public class TestTry {
 		try {
 			testTry.testRuntimeException();
 		} catch (Exception e) {
-			// TODO: handle exception
 			e.printStackTrace();
 		}
 		testTry.test();
